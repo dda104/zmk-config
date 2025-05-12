@@ -51,7 +51,7 @@
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp CARET    &kp QUESTION  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &kp DELETE
 &trans           &trans       &trans    &trans      &trans       &trans       &kp LEFT      &kp DOWN_ARROW  &kp UP_ARROW          &kp RIGHT              &trans  &trans
-&trans           &trans       &trans    &trans      &trans       &trans       &trans        &trans          &trans                &trans                 &trans  &kp INSERT
+&trans           &trans       &trans    &trans      &trans       &trans       &kp HOME      &kp PAGE_DOWN   &kp PAGE_UP           &kp END                &trans  &kp INSERT
                                         &trans      &trans       &trans       &trans        &trans          &trans
             >;
         };
