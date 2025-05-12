@@ -31,10 +31,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp ESCAPE  &kp Q           &kp W           &kp E               &kp R             &mt GRAVE T    &kp Y                           &kp U                &kp I               &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &kp BACKSPACE
-&kp TAB     &mt A LEFT_WIN  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G          &kp H                           &mt LEFT_SHIFT J     &mt LEFT_CONTROL K  &mt L LEFT_ALT      &mt LEFT_WIN SEMICOLON  &kp SQT
-&kp LSHFT   &kp Z           &kp X           &kp C               &kp V             &kp B          &kp N                           &mt RIGHT_BRACKET M  &kp COMMA           &kp DOT             &mt BACKSLASH SLASH     &kp RSHFT
-                                            &kp LGUI            &mo 1             &kp SPACE      &tp LC(LS(LA(LEFT_ALT))) ENTER  &mo 2                &kp LEFT_CONTROL
+&kp ESCAPE  &kp Q  &kp W  &kp E     &kp R  &mt T GRAVE    &kp Y                           &kp U                &kp I             &mt O LEFT_BRACKET  &mt P RIGHT_BRACKET         &kp BACKSPACE
+&kp TAB     &kp A  &kp S  &kp D     &kp F  &kp G          &kp H                           &kp J                &kp K             &kp L               &kp SEMICOLON               &kp SQT
+&kp LSHFT   &kp Z  &kp X  &kp C     &kp V  &kp B          &kp N                           &mt M RIGHT_BRACKET  &kp COMMA         &kp DOT             &mt SLASH NON_US_BACKSLASH  &kp RSHFT
+                          &kp LGUI  &mo 1  &kp SPACE      &tp LC(LS(LA(LEFT_ALT))) ENTER  &mo 2                &kp LEFT_CONTROL
             >;
         };
 
