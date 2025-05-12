@@ -34,7 +34,7 @@
 &kp ESCAPE  &kp Q  &kp W  &mt GRAVE E  &kp R  &kp T        &kp Y                           &kp U  &kp I             &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P  &kp BACKSPACE
 &kp TAB     &kp A  &kp S  &kp D        &kp F  &kp G        &kp H                           &kp J  &kp K             &kp L               &kp SEMI             &kp SQT
 &kp LSHFT   &kp Z  &kp X  &kp C        &kp V  &kp B        &kp N                           &kp M  &kp COMMA         &kp DOT             &kp FSLH             &kp RSHFT
-                          &kp LGUI     &mo 1  &kp SPACE    &tp LC(LS(LA(LEFT_ALT))) ENTER  &mo 0  &kp LEFT_CONTROL
+                          &kp LGUI     &mo 1  &kp SPACE    &tp LC(LS(LA(LEFT_ALT))) ENTER  &mo 2  &kp LEFT_CONTROL
             >;
         };
 
@@ -49,7 +49,7 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &kp DELETE
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
