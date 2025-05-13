@@ -32,6 +32,16 @@
             bindings = <&kp ENTER>;
             key-positions = <19 20 21>;
         };
+
+        todefault {
+            bindings = <&to 0>;
+            key-positions = <0 12 24>;
+        };
+
+        tocs {
+            bindings = <&to 3>;
+            key-positions = <1 13 25>;
+        };
     };
 
     keymap {
@@ -67,6 +77,24 @@
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp MINUS  &kp EQUAL
 &trans        &trans        &trans        &trans        &trans        &kp LEFT_WIN    &kp HOME      &kp PAGE_DOWN  &kp PG_UP     &kp END       &kp INS    &trans
                                           &trans        &trans        &trans          &trans        &trans         &trans
+            >;
+        };
+
+        cs {
+            bindings = <
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp W   &trans  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_SHIFT  &trans        &kp A         &kp S   &kp D   &kp F        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL       &trans        &trans        &trans  &trans  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans  &mo 4   &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        cs2 {
+            bindings = <
+&kp ESC  &trans  &trans  &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
