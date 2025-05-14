@@ -82,7 +82,7 @@
 
         cs {
             bindings = <
-&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp W  &none  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
+&kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp W  &kt E  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL       &none         &none         &none  &none  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
                                             &none  &mo 4  &kp SPACE    &trans  &trans  &trans
