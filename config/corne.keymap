@@ -42,6 +42,11 @@
             bindings = <&to 4>;
             key-positions = <1 13 25>;
         };
+
+        lesc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 1 2>;
+        };
     };
 
     keymap {
@@ -55,28 +60,28 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH      &trans
-                                &mo 2  &mo 1  &kp SPACE    &kp SPACE  &mo 3  &mo 3
+&kp LEFT_ALT      &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &kp BACKSPACE
+&kp LEFT_CONTROL  &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH      &kp LEFT_SHIFT
+                                &mo 2  &mo 1  &kp SPACE    &kp SPACE  &mo 3  &trans
             >;
         };
 
         ll1 {
             bindings = <
-&kp GRAVE  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND     &kp DOLLAR    &kp PERCENT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp NUMBER_6     &kp N7        &kp N8        &kp N9        &kp N0         &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans        &trans        &trans         &trans  &trans  &trans
+&kp GRAVE  &kp F2        &kp F3        &kp F4        &kp F5        &kp LG(LS(S))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5           &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0           &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans        &trans        &trans           &trans  &trans  &trans
             >;
         };
 
         ll2 {
             bindings = <
-&kp ESCAPE  &kp F2            &kp F3            &kp F4            &kp F5            &kp LG(LS(S))       &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp LC(INSERT)    &kp LS(INSERT)    &kp LC(LS(C))     &kp LC(LS(V))     &trans              &trans  &trans  &trans  &trans  &trans  &trans
-                                                &trans            &trans            &trans              &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &trans            &trans              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &kp LC(INSERT)    &kp LS(INSERT)    &trans              &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans            &trans            &trans              &trans  &trans  &trans
             >;
         };
 
@@ -100,10 +105,10 @@
 
         cs2 {
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB  &trans  &trans  &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+&kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB       &trans        &trans        &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
