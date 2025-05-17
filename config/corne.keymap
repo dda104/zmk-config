@@ -39,7 +39,7 @@
         };
 
         tocs {
-            bindings = <&to 6>;
+            bindings = <&to 5>;
             key-positions = <1 13 25>;
         };
     };
@@ -58,7 +58,7 @@
 &kp TAB           &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &trans
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH      &trans
-                                &mo 2  &mo 1  &kp SPACE    &kp SPACE  &mo 3  &trans
+                                &mo 2  &mo 1  &kp SPACE    &kp SPACE  &mo 3  &mo 4
             >;
         };
 
@@ -73,9 +73,9 @@
 
         ll2 {
             bindings = <
-&kp F1  &kp F2            &kp F3            &kp F4            &kp F5            &kp F6              &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1  &kp F2            &kp F3            &kp F4            &kp F5            &kp LG(LS(S))       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans            &trans            &trans            &kp LC(INSERT)    &kp LS(INSERT)      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LC(INSERT)    &kp LS(INSERT)    &kp LC(LS(C))     &kp LC(LS(V))     &trans              &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans            &trans            &trans              &trans  &trans  &trans
             >;
         };
@@ -83,27 +83,18 @@
         rl1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &kp DELETE
 &trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_1  &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5           &trans
                         &trans  &trans  &trans    &trans        &trans         &trans
             >;
         };
 
-        fix42 {
+        rl2 {
             bindings = <
-&kp GRAVE         &trans            &trans            &kp LG(E)         &trans            &kp LG(LS(S))       &kp PRINTSCREEN  &trans          &trans        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
-&kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)  &kp LG(NUMBER_6)    &kp LEFT         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &trans             &kp LG(L)
-&trans            &trans            &trans            &trans            &kp LC(INSERT)    &kp LS(INSERT)      &trans           &trans          &trans        &trans            &kp BACKSLASH      &trans
-                                                      &trans            &trans            &trans              &trans           &trans          &trans
-            >;
-        };
-
-        rare {
-            bindings = <
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6          &kp F7        &kp F8         &kp F9        &kp F10       &kp F11    &kp F12
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8   &kp NUMBER_9  &kp NUMBER_0  &kp MINUS  &kp EQUAL
-&trans        &trans        &trans        &trans        &trans        &kp LEFT_WIN    &kp HOME      &kp PAGE_DOWN  &kp PG_UP     &kp END       &kp INS    &trans
-                                          &trans        &trans        &trans          &trans        &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PRINTSCREEN  &none           &none         &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT         &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &kp MINUS          &kp EQUAL
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME         &kp PAGE_DOWN   &kp PG_UP     &kp END           &kp BACKSLASH      &trans
+                        &trans  &trans  &trans    &trans           &trans          &trans
             >;
         };
 
@@ -112,7 +103,7 @@
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp W  &kt E  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL       &none         &none         &none  &none  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                                            &none  &mo 7  &kp SPACE    &trans  &trans  &trans
+                                            &none  &mo 6  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
