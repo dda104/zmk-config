@@ -39,7 +39,7 @@
         };
 
         tocs {
-            bindings = <&to 5>;
+            bindings = <&to 6>;
             key-positions = <1 13 25>;
         };
     };
@@ -55,10 +55,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp TAB           &kp Q  &kp W  &kp E   &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &trans
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D   &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C   &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH      &trans
-                                &trans  &mo 1  &kp SPACE    &kp SPACE  &mo 2  &trans
+&kp TAB           &kp Q  &kp W  &kp E  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P          &trans
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH      &trans
+                                &mo 2  &mo 1  &kp SPACE    &kp SPACE  &mo 3  &trans
             >;
         };
 
@@ -68,6 +68,15 @@
 &kp GRAVE   &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5         &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &kp NUMBER_6     &kp N7        &kp N8        &kp N9        &kp N0         &trans  &trans  &trans  &trans  &trans  &trans
                                            &trans        &trans        &trans         &trans  &trans  &trans
+            >;
+        };
+
+        ll2 {
+            bindings = <
+&kp F1  &kp F2            &kp F3            &kp F4            &kp F5            &kp F6              &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans            &trans            &kp LC(INSERT)    &kp LS(INSERT)      &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans            &trans            &trans              &trans  &trans  &trans
             >;
         };
 
@@ -103,7 +112,7 @@
 &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp W  &kt E  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
 &kp LCTRL       &none         &none         &none  &none  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                                            &none  &mo 6  &kp SPACE    &trans  &trans  &trans
+                                            &none  &mo 7  &kp SPACE    &trans  &trans  &trans
             >;
         };
 
