@@ -53,6 +53,66 @@
             bindings = <&mo 4>;
             key-positions = <36 12>;
         };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <0 12>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <1 13>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <2 14>;
+        };
+
+        f4 {
+            bindings = <&kp F4>;
+            key-positions = <15 3>;
+        };
+
+        f5 {
+            bindings = <&kp F5>;
+            key-positions = <4 16>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <5 17>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <12 24>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <13 25>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <14 26>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <15 27>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <16 28>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <17 29>;
+        };
     };
 
     keymap {
@@ -93,7 +153,7 @@
 
         ll1 {
             bindings = <
-&kp GRAVE  &kp F2        &kp F3        &kp F4        &kp F5        &kp LG(LS(S))    &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &trans        &trans        &trans        &trans        &kp LG(LS(S))    &trans  &trans  &trans  &trans  &trans  &trans
 &kp TAB    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5           &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0           &trans  &trans  &trans  &trans  &trans  &trans
                                        &trans        &trans        &trans           &trans  &trans  &trans
