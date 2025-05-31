@@ -134,10 +134,28 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp LEFT_ALT      &kp Q           &kp W           &kp E               &kp R             &kp T          &kp Y      &kp U             &kp I               &kp O           &kp P                   &kp BACKSPACE
-&kp LEFT_CONTROL  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G          &kp H      &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LEFT_WIN SEMICOLON  &kp SQT
-&kp LEFT_SHIFT    &kp Z           &kp X           &kp C               &kp V             &kp B          &kp N      &kp M             &kp COMMA           &kp DOT         &kp SLASH               &kp LEFT_SHIFT
-                                                  &mo 2               &mo 1             &lt 3 SPACE    &kp SPACE  &mo 4             &trans
+&kp GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T          &kp Y        &kp U             &kp I               &kp O           &kp P                   &kp BACKSPACE
+&kp TAB    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G          &kp H        &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LEFT_WIN SEMICOLON  &kp SQT
+&trans     &kp Z           &kp X           &kp C               &kp V             &kp B          &kp N        &kp M             &kp COMMA           &kp DOT         &kp SLASH               &trans
+                                           &mo 4               &mo 3             &lt 1 SPACE    &lt 2 SPACE  &trans            &trans
+            >;
+        };
+
+        ll1 {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &kp LG(LS(S))    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0           &trans  &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans           &trans  &trans  &trans
+            >;
+        };
+
+        rl1 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp MINUS       &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN   &kp PG_UP     &kp END           &kp BACKSLASH      &trans
+                        &trans  &trans  &trans    &trans    &trans          &trans
             >;
         };
 
@@ -156,24 +174,6 @@
 &trans      &trans             &kp LEFT          &kp UP_ARROW  &kp DOWN       &kp RIGHT    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &kp BACKSLASH      &kp HOME          &kp PG_UP     &kp PAGE_DOWN  &kp END      &trans  &trans  &trans  &trans  &trans  &trans
                                                  &trans        &trans         &trans       &trans  &trans  &trans
-            >;
-        };
-
-        ll1 {
-            bindings = <
-&kp GRAVE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(LS(S))    &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &kp NUMBER_1      &kp NUMBER_2      &kp NUMBER_3      &kp NUMBER_4      &kp N5           &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp NUMBER_6      &kp N7            &kp N8            &kp N9            &kp N0           &trans  &trans  &trans  &trans  &trans  &trans
-                                               &trans            &trans            &trans           &trans  &trans  &trans
-            >;
-        };
-
-        rl1 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp MINUS       &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN   &kp PG_UP     &kp END           &kp BACKSLASH      &trans
-                        &trans  &trans  &trans    &trans    &trans          &trans
             >;
         };
 
