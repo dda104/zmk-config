@@ -127,6 +127,66 @@
             bindings = <&kp ESCAPE>;
             key-positions = <9 10 11>;
         };
+
+        f1 {
+            bindings = <&kp F1>;
+            key-positions = <6 18>;
+        };
+
+        f2 {
+            bindings = <&kp F2>;
+            key-positions = <7 19>;
+        };
+
+        f3 {
+            bindings = <&kp F3>;
+            key-positions = <8 20>;
+        };
+
+        f4 {
+            bindings = <&kp F4>;
+            key-positions = <9 21>;
+        };
+
+        f5 {
+            bindings = <&kp F5>;
+            key-positions = <10 22>;
+        };
+
+        f6 {
+            bindings = <&kp F6>;
+            key-positions = <11 23>;
+        };
+
+        f7 {
+            bindings = <&kp F7>;
+            key-positions = <18 30>;
+        };
+
+        f8 {
+            bindings = <&kp F8>;
+            key-positions = <19 31>;
+        };
+
+        f9 {
+            bindings = <&kp F9>;
+            key-positions = <20 32>;
+        };
+
+        f10 {
+            bindings = <&kp F10>;
+            key-positions = <21 33>;
+        };
+
+        f11 {
+            bindings = <&kp F11>;
+            key-positions = <22 34>;
+        };
+
+        f12 {
+            bindings = <&kp F12>;
+            key-positions = <23 35>;
+        };
     };
 
     macros {
