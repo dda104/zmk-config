@@ -54,7 +54,7 @@
         };
 
         tocs {
-            bindings = <&to 3>;
+            bindings = <&to 5>;
             key-positions = <1 13 25>;
         };
 
@@ -124,6 +124,36 @@
         };
     };
 
+    macros {
+        sv_cheats: sv_cheats {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp V &kp UNDER &kp C &kp H &kp E &kp A &kp T &kp S &kp SPACE &kp N1>;
+            label = "SV_CHEATS";
+        };
+
+        kill: kill {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp K &kp I &kp L &kp L>;
+            label = "KILL";
+        };
+
+        sv_autobunnyhopping_1: sv_autobunnyhopping_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp V &kp UNDER &kp A &kp U &kp T &kp O &kp B &kp U &kp N &kp N &kp Y &kp H &kp O &kp P &kp P &kp I &kp N &kp G &kp SPACE &kp N1>;
+            label = "SV_AUTOBUNNYHOPPING_1";
+        };
+
+        sv_autobunnyhopping_0: sv_autobunnyhopping_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp V &kp UNDER &kp A &kp U &kp T &kp O &kp B &kp U &kp N &kp N &kp Y &kp H &kp O &kp P &kp P &kp I &kp N &kp G &kp SPACE &kp NUMBER_0>;
+            label = "SV_AUTOBUNNYHOPPING_0";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -137,8 +167,8 @@
             bindings = <
 &kp GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y         &kp U             &kp I               &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &kp BACKSPACE
 &kp TAB    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt INSERT G    &mt INSERT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &kp SQT
-&trans     &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &kp COMMA           &kp DOT             &mt BACKSLASH SLASH     &trans
-                                           &trans              &mo 2             &lt 1 SPACE     &lt 1 SPACE   &trans            &trans
+&trans     &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &kp COMMA           &kp DOT             &kp SLASH               &mt LS(BACKSLASH) BACKSLASH
+                                           &mo 3               &mo 2             &lt 1 SPACE     &lt 1 SPACE   &mo 2             &mo 3
             >;
         };
 
@@ -151,12 +181,21 @@
             >;
         };
 
-        mirror {
+        default_mirror {
             bindings = <
-&kp BACKSPACE  &mt RIGHT_BRACKET P  &mt LEFT_BRACKET O  &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
-&kp SQT        &kp SEMICOLON        &kp L               &kp K      &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &mt BACKSLASH SLASH  &kp PERIOD          &kp COMMA  &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans
-                                                        &trans     &trans  &trans    &trans  &trans  &trans
+&kp BACKSPACE                &mt RIGHT_BRACKET P  &mt LEFT_BRACKET O  &kp I      &kp U   &kp Y     &kp T   &kp R   &kp E   &kp W  &kp Q  &kp GRAVE
+&kp SQT                      &kp SEMICOLON        &kp L               &kp K      &kp J   &kp H     &kp G   &kp F   &kp D   &kp S  &kp A  &kp TAB
+&mt LS(BACKSLASH) BACKSLASH  &kp SLASH            &kp PERIOD          &kp COMMA  &kp M   &kp N     &kp B   &kp V   &kp C   &kp X  &kp Z  &trans
+                                                                      &trans     &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        second_mirror {
+            bindings = <
+&kp DELETE  &trans  &trans          &trans        &trans          &trans       &mt LS(MINUS) MINUS        &mt LS(EQUAL) EQUAL  &trans               &trans               &trans               &trans
+&trans      &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT    &mt LS(N1) NUMBER_1        &mt LS(N2) NUMBER_2  &mt LS(N3) NUMBER_3  &mt LS(N4) NUMBER_4  &mt LS(N5) NUMBER_5  &trans
+&trans      &trans  &trans          &trans        &trans          &trans       &mt LS(NUMBER_6) NUMBER_6  &mt LS(N7) NUMBER_7  &mt LS(N8) NUMBER_8  &mt LS(N9) NUMBER_9  &mt LS(N0) NUMBER_0  &trans
+                                    &trans        &trans          &trans       &trans                     &trans               &trans
             >;
         };
 
@@ -165,16 +204,25 @@
 &kp NUMBER_3    &kp NUMBER_2  &kp NUMBER_1  &kp W  &kt E  &kp R        &none  &none  &none  &none  &none  &none
 &kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
 &kp LCTRL       &none         &none         &none  &none  &kp B        &none  &none  &none  &none  &none  &none
-                                            &none  &mo 4  &kp SPACE    &none  &none  &none
+                                            &mo 6  &mo 5  &kp SPACE    &none  &none  &none
             >;
         };
 
         cs2 {
             bindings = <
-&trans   &trans  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB  &trans  &trans  &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans    &trans  &trans  &trans
+&kp GRAVE  &trans  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &trans  &trans  &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &trans  &trans  &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        cs3 {
+            bindings = <
+&sv_cheats  &kill   &sv_autobunnyhopping_1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &sv_autobunnyhopping_0  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
