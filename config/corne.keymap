@@ -128,62 +128,62 @@
             key-positions = <9 10 11>;
         };
 
-        f1 {
+        f1_r {
             bindings = <&kp F1>;
             key-positions = <6 18>;
         };
 
-        f2 {
+        f2_r {
             bindings = <&kp F2>;
             key-positions = <7 19>;
         };
 
-        f3 {
+        f3_r {
             bindings = <&kp F3>;
             key-positions = <8 20>;
         };
 
-        f4 {
+        f4_r {
             bindings = <&kp F4>;
             key-positions = <9 21>;
         };
 
-        f5 {
+        f5_r {
             bindings = <&kp F5>;
             key-positions = <10 22>;
         };
 
-        f6 {
+        f6_r {
             bindings = <&kp F6>;
             key-positions = <11 23>;
         };
 
-        f7 {
+        f7_r {
             bindings = <&kp F7>;
             key-positions = <18 30>;
         };
 
-        f8 {
+        f8_r {
             bindings = <&kp F8>;
             key-positions = <19 31>;
         };
 
-        f9 {
+        f9_r {
             bindings = <&kp F9>;
             key-positions = <20 32>;
         };
 
-        f10 {
+        f10_r {
             bindings = <&kp F10>;
             key-positions = <21 33>;
         };
 
-        f11 {
+        f11_r {
             bindings = <&kp F11>;
             key-positions = <22 34>;
         };
 
-        f12 {
+        f12_r {
             bindings = <&kp F12>;
             key-positions = <23 35>;
         };
