@@ -48,13 +48,13 @@
             key-positions = <40 41>;
         };
 
-        todefault {
+        to_default {
             bindings = <&to 0>;
             key-positions = <0 12 24>;
         };
 
-        tocs {
-            bindings = <&to 5>;
+        to_cs {
+            bindings = <&to 4>;
             key-positions = <1 13 25>;
         };
 
@@ -121,6 +121,11 @@
         f12 {
             bindings = <&kp F12>;
             key-positions = <17 29>;
+        };
+
+        r_esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <9 10 11>;
         };
     };
 
