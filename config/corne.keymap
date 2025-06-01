@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
     hold-trigger-key-positions = <36 37 38 39 40 41>;
@@ -17,7 +17,7 @@
 };
 
 &lt {
-    tapping-term-ms = <300>;
+    tapping-term-ms = <250>;
     quick-tap-ms = <175>;
     require-prior-idle-ms = <150>;
 };
@@ -54,7 +54,7 @@
         };
 
         tocs {
-            bindings = <&to 4>;
+            bindings = <&to 3>;
             key-positions = <1 13 25>;
         };
 
@@ -138,25 +138,16 @@
 &kp GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y         &kp U             &kp I               &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &kp BACKSPACE
 &kp TAB    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt INSERT G    &mt INSERT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &kp SQT
 &trans     &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &kp COMMA           &kp DOT             &mt BACKSLASH SLASH     &trans
-                                           &trans              &mo 3             &lt 1 SPACE     &lt 2 SPACE   &trans            &trans
+                                           &trans              &mo 2             &lt 1 SPACE     &lt 1 SPACE   &trans            &trans
             >;
         };
 
-        left {
+        second {
             bindings = <
-&trans  &trans                     &trans                     &trans                     &mt LS(MINUS) MINUS        &mt LS(EQUAL) EQUAL          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) NUMBER_5          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &mt LS(NUMBER_6) NUMBER_6  &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &mt LS(NUMBER_0) NUMBER_0    &trans  &trans  &trans  &trans  &trans  &trans
-                                                              &trans                     &trans                     &trans                       &trans  &trans  &trans
-            >;
-        };
-
-        right {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &trans        &trans     &trans  &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &trans        &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans    &trans          &trans
+&trans  &trans                     &trans                     &trans                     &mt LS(MINUS) MINUS        &mt LS(EQUAL) EQUAL          &trans          &trans          &trans        &trans     &trans  &kp DELETE
+&trans  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) NUMBER_5          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &mt LS(NUMBER_6) NUMBER_6  &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &mt LS(NUMBER_0) NUMBER_0    &trans          &trans          &trans        &trans     &trans  &trans
+                                                              &trans                     &trans                     &trans                       &trans          &trans          &trans
             >;
         };
 
@@ -174,7 +165,7 @@
 &kp NUMBER_3    &kp NUMBER_2  &kp NUMBER_1  &kp W  &kt E  &kp R        &none  &none  &none  &none  &none  &none
 &kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
 &kp LCTRL       &none         &none         &none  &none  &kp B        &none  &none  &none  &none  &none  &none
-                                            &none  &mo 5  &kp SPACE    &none  &none  &none
+                                            &none  &mo 4  &kp SPACE    &none  &none  &none
             >;
         };
 
