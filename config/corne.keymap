@@ -8,18 +8,12 @@
 #include <dt-bindings/zmk/keys.h>
 
 &mt {
-    tapping-term-ms = <250>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
     hold-trigger-key-positions = <36 37 38 39 40 41>;
     hold-trigger-on-release;
     flavor = "tap-preferred";
 };
 
 &lt {
-    tapping-term-ms = <250>;
-    quick-tap-ms = <175>;
-    require-prior-idle-ms = <150>;
 };
 
 / {
@@ -230,10 +224,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y         &kp U             &kp I               &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &kp BACKSPACE
-&kp TAB    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt INSERT G    &mt INSERT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &kp SQT
-&trans     &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &kp COMMA           &kp DOT             &kp SLASH               &mt LS(BACKSLASH) BACKSLASH
-                                           &mo 3               &mo 2             &lt 1 SPACE     &lt 1 SPACE   &mo 2             &mo 3
+&mt LS(GRAVE) GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y         &kp U             &kp I                &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &kp BACKSPACE
+&kp TAB              &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt INSERT G    &mt INSERT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K   &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &mt LS(SQT) SQT
+&trans               &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &mt LS(COMMA) COMMA  &mt LS(DOT) DOT     &mt LS(SLASH) SLASH     &mt LS(BACKSLASH) BACKSLASH
+                                                     &mo 3               &mo 2             &lt 1 SPACE     &lt 1 SPACE   &mo 2             &mo 3
             >;
         };
 
