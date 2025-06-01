@@ -54,7 +54,7 @@
         };
 
         tocs {
-            bindings = <&to 5>;
+            bindings = <&to 4>;
             key-positions = <1 13 25>;
         };
 
@@ -127,7 +127,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             // -----------------------------------------------------------------------------------------
             // | TAB  |  Q  |  W  |  E  |  R  |    T    |   |  Y  |  U   |  I  |  O  |  P  | ESC |
             // | CTRL |  A  |  S  |  D  |  F  |    G    |   |  H  |  J   |  K  |  L  |  ;  |  LWR/'   |
@@ -135,64 +135,55 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&kp GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T          &kp Y        &kp U             &kp I               &kp O           &kp P                   &kp BACKSPACE
-&kp TAB    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G          &kp H        &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L  &mt LEFT_WIN SEMICOLON  &kp SQT
-&trans     &kp Z           &kp X           &kp C               &kp V             &kp B          &kp N        &kp M             &kp COMMA           &kp DOT         &kp SLASH               &trans
-                                           &mo 4               &mo 3             &lt 1 SPACE    &lt 2 SPACE  &trans            &trans
+&kp GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y         &kp U             &kp I               &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &kp BACKSPACE
+&kp TAB    &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt INSERT G    &mt INSERT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &kp SQT
+&trans     &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &kp COMMA           &kp DOT             &mt BACKSLASH SLASH     &trans
+                                           &trans              &mo 3             &lt 1 SPACE     &lt 2 SPACE   &trans            &trans
             >;
         };
 
-        ll1 {
+        left {
             bindings = <
-&trans  &trans        &trans        &trans        &trans        &kp LG(LS(S))    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_6  &kp N7        &kp N8        &kp N9        &kp N0           &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans        &trans        &trans           &trans  &trans  &trans
+&trans  &trans                     &trans                     &trans                     &mt LS(MINUS) MINUS        &mt LS(EQUAL) EQUAL          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) NUMBER_5          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt LS(NUMBER_6) NUMBER_6  &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &mt LS(NUMBER_0) NUMBER_0    &trans  &trans  &trans  &trans  &trans  &trans
+                                                              &trans                     &trans                     &trans                       &trans  &trans  &trans
             >;
         };
 
-        rl1 {
+        right {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp MINUS       &kp EQUAL     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp DELETE
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT         &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PAGE_DOWN   &kp PG_UP     &kp END           &kp BACKSLASH      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &trans        &trans     &trans  &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans          &trans        &trans     &trans  &trans
                         &trans  &trans  &trans    &trans    &trans          &trans
             >;
         };
 
-        llm1 {
+        mirror {
             bindings = <
-&kp BACKSPACE  &kp P          &kp O       &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
-&kp SQT        &kp SEMICOLON  &kp L       &kp K      &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &kp SLASH      &kp PERIOD  &kp COMMA  &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans     &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        llm2 {
-            bindings = <
-&kp DELETE  &kp RIGHT_BRACKET  &kp LEFT_BRACKET  &kp EQUAL     &kp MINUS      &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans             &kp LEFT          &kp UP_ARROW  &kp DOWN       &kp RIGHT    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &kp BACKSLASH      &kp HOME          &kp PG_UP     &kp PAGE_DOWN  &kp END      &trans  &trans  &trans  &trans  &trans  &trans
-                                                 &trans        &trans         &trans       &trans  &trans  &trans
+&kp BACKSPACE  &mt RIGHT_BRACKET P  &mt LEFT_BRACKET O  &kp I      &kp U   &kp Y     &trans  &trans  &trans  &trans  &trans  &trans
+&kp SQT        &kp SEMICOLON        &kp L               &kp K      &kp J   &kp H     &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &mt BACKSLASH SLASH  &kp PERIOD          &kp COMMA  &kp M   &kp N     &trans  &trans  &trans  &trans  &trans  &trans
+                                                        &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         cs {
             bindings = <
-&kp NUMBER_3    &kp NUMBER_2  &kp NUMBER_1  &kp W  &kt E  &kp R        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LCTRL       &none         &none         &none  &none  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
-                                            &none  &mo 6  &kp SPACE    &trans  &trans  &trans
+&kp NUMBER_3    &kp NUMBER_2  &kp NUMBER_1  &kp W  &kt E  &kp R        &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
+&kp LCTRL       &none         &none         &none  &none  &kp B        &none  &none  &none  &none  &none  &none
+                                            &none  &mo 5  &kp SPACE    &none  &none  &none
             >;
         };
 
         cs2 {
             bindings = <
-&kp NUMBER_6  &kp NUMBER_5  &kp NUMBER_4  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB       &trans        &trans        &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans  &trans  &trans    &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB  &trans  &trans  &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans  &trans  &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
