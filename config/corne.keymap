@@ -11,10 +11,10 @@
     hold-trigger-key-positions = <36 37 38 39 40 41>;
     hold-trigger-on-release;
     flavor = "tap-preferred";
+    tapping-term-ms = <250>;
 };
 
-&lt {
-};
+&lt { tapping-term-ms = <250>; };
 
 / {
     behaviors {
