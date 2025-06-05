@@ -48,7 +48,7 @@
         };
 
         to_cs {
-            bindings = <&to 4>;
+            bindings = <&to 5>;
             key-positions = <1 13 25>;
         };
 
@@ -57,129 +57,9 @@
             key-positions = <0 1 2>;
         };
 
-        f1 {
-            bindings = <&kp F1>;
-            key-positions = <0 12>;
-        };
-
-        f2 {
-            bindings = <&kp F2>;
-            key-positions = <1 13>;
-        };
-
-        f3 {
-            bindings = <&kp F3>;
-            key-positions = <2 14>;
-        };
-
-        f4 {
-            bindings = <&kp F4>;
-            key-positions = <15 3>;
-        };
-
-        f5 {
-            bindings = <&kp F5>;
-            key-positions = <4 16>;
-        };
-
-        f6 {
-            bindings = <&kp F6>;
-            key-positions = <5 17>;
-        };
-
-        f7 {
-            bindings = <&kp F7>;
-            key-positions = <12 24>;
-        };
-
-        f8 {
-            bindings = <&kp F8>;
-            key-positions = <13 25>;
-        };
-
-        f9 {
-            bindings = <&kp F9>;
-            key-positions = <14 26>;
-        };
-
-        f10 {
-            bindings = <&kp F10>;
-            key-positions = <15 27>;
-        };
-
-        f11 {
-            bindings = <&kp F11>;
-            key-positions = <16 28>;
-        };
-
-        f12 {
-            bindings = <&kp F12>;
-            key-positions = <17 29>;
-        };
-
         r_esc {
             bindings = <&kp ESCAPE>;
             key-positions = <9 10 11>;
-        };
-
-        f1_r {
-            bindings = <&kp F1>;
-            key-positions = <6 18>;
-        };
-
-        f2_r {
-            bindings = <&kp F2>;
-            key-positions = <7 19>;
-        };
-
-        f3_r {
-            bindings = <&kp F3>;
-            key-positions = <8 20>;
-        };
-
-        f4_r {
-            bindings = <&kp F4>;
-            key-positions = <9 21>;
-        };
-
-        f5_r {
-            bindings = <&kp F5>;
-            key-positions = <10 22>;
-        };
-
-        f6_r {
-            bindings = <&kp F6>;
-            key-positions = <11 23>;
-        };
-
-        f7_r {
-            bindings = <&kp F7>;
-            key-positions = <18 30>;
-        };
-
-        f8_r {
-            bindings = <&kp F8>;
-            key-positions = <19 31>;
-        };
-
-        f9_r {
-            bindings = <&kp F9>;
-            key-positions = <20 32>;
-        };
-
-        f10_r {
-            bindings = <&kp F10>;
-            key-positions = <21 33>;
-        };
-
-        f11_r {
-            bindings = <&kp F11>;
-            key-positions = <22 34>;
-        };
-
-        f12_r {
-            bindings = <&kp F12>;
-            key-positions = <23 35>;
         };
     };
 
@@ -226,7 +106,7 @@
             bindings = <
 &mt LS(GRAVE) GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y         &kp U             &kp I                &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &kp BACKSPACE
 &kp TAB              &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt INSERT G    &mt INSERT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K   &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &mt LS(SQT) SQT
-&trans               &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &mt LS(COMMA) COMMA  &mt LS(DOT) DOT     &mt LS(SLASH) SLASH     &mt LS(BACKSLASH) BACKSLASH
+&mo 4                &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &mt LS(COMMA) COMMA  &mt LS(DOT) DOT     &mt LS(SLASH) SLASH     &mt LS(BACKSLASH) BACKSLASH
                                                      &mo 3               &mo 2             &lt 1 SPACE     &lt 1 SPACE   &mo 2             &mo 3
             >;
         };
@@ -244,7 +124,7 @@
             bindings = <
 &kp BACKSPACE                &mt RIGHT_BRACKET P  &mt LEFT_BRACKET O  &kp I      &kp U   &kp Y     &kp T   &kp R   &kp E   &kp W  &kp Q  &kp GRAVE
 &kp SQT                      &kp SEMICOLON        &kp L               &kp K      &kp J   &kp H     &kp G   &kp F   &kp D   &kp S  &kp A  &kp TAB
-&mt LS(BACKSLASH) BACKSLASH  &kp SLASH            &kp PERIOD          &kp COMMA  &kp M   &kp N     &kp B   &kp V   &kp C   &kp X  &kp Z  &trans
+&mt LS(BACKSLASH) BACKSLASH  &kp SLASH            &kp PERIOD          &kp COMMA  &kp M   &kp N     &kp B   &kp V   &kp C   &kp X  &kp Z  &mo 4
                                                                       &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
@@ -258,12 +138,21 @@
             >;
         };
 
+        f1-12 {
+            bindings = <
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
+&trans  &trans  &trans  &trans   &trans   &trans     &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans   &trans   &trans     &trans  &trans  &trans
+            >;
+        };
+
         cs {
             bindings = <
 &kp NUMBER_3    &kp NUMBER_2  &kp NUMBER_1  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none  &none
 &kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
 &kp LCTRL       &none         &none         &none  &none  &kp B        &none  &none  &none  &none  &none  &none
-                                            &mo 6  &mo 5  &kp SPACE    &none  &none  &none
+                                            &mo 7  &mo 6  &kp SPACE    &none  &none  &none
             >;
         };
 
