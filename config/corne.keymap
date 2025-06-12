@@ -48,7 +48,7 @@
         };
 
         to_cs {
-            bindings = <&to 5>;
+            bindings = <&to 3>;
             key-positions = <1 13 25>;
         };
 
@@ -104,71 +104,53 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&mt LS(GRAVE) GRAVE  &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y         &kp U             &kp I                &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &kp BACKSPACE
-&kp TAB              &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt INSERT G    &mt INSERT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K   &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &mt LS(SQT) SQT
-&mo 4                &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &mt LS(COMMA) COMMA  &mt LS(DOT) DOT     &mt LS(SLASH) SLASH     &mt LS(BACKSLASH) BACKSLASH
-                                                     &mo 3               &mo 2             &lt 1 SPACE     &lt 1 SPACE   &mo 2             &mo 3
+&trans   &kp Q           &kp W           &kp E               &kp R             &kp T           &kp Y         &kp U             &kp I                &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &trans
+&kp TAB  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt INSERT G    &mt INSERT H  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K   &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &mt LS(SQT) SQT
+&trans   &kp Z           &kp X           &kp C               &kp V             &kp B           &kp N         &kp M             &mt LS(COMMA) COMMA  &mt LS(DOT) DOT     &mt LS(SLASH) SLASH     &trans
+                                         &trans              &mo 2             &lt 1 SPACE     &lt 1 SPACE   &trans            &trans
             >;
         };
 
         second {
             bindings = <
-&trans  &trans                     &trans                     &trans                     &mt LS(MINUS) MINUS        &mt LS(EQUAL) EQUAL          &trans          &trans          &trans        &trans     &trans  &kp DELETE
-&trans  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) NUMBER_5          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans  &trans
-&trans  &mt LS(NUMBER_6) NUMBER_6  &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &mt LS(NUMBER_0) NUMBER_0    &trans          &trans          &trans        &trans     &trans  &trans
+&trans  &mt LS(GRAVE) GRAVE        &trans                     &trans                     &mt LS(MINUS) MINUS        &mt LS(EQUAL) EQUAL          &trans          &trans          &trans        &trans     &kp BACKSPACE  &trans
+&trans  &mt LS(NUMBER_1) NUMBER_1  &mt LS(NUMBER_2) NUMBER_2  &mt LS(NUMBER_3) NUMBER_3  &mt LS(NUMBER_4) NUMBER_4  &mt LS(N5) NUMBER_5          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans         &kp DELETE
+&trans  &mt LS(NUMBER_6) NUMBER_6  &mt LS(NUMBER_7) NUMBER_7  &mt LS(NUMBER_8) NUMBER_8  &mt LS(NUMBER_9) NUMBER_9  &mt LS(NUMBER_0) NUMBER_0    &trans          &trans          &trans        &trans     &trans         &trans
                                                               &trans                     &trans                     &trans                       &trans          &trans          &trans
-            >;
-        };
-
-        default_mirror {
-            bindings = <
-&kp BACKSPACE                &mt RIGHT_BRACKET P  &mt LEFT_BRACKET O  &kp I      &kp U   &kp Y     &kp T   &kp R   &kp E   &kp W  &kp Q  &kp GRAVE
-&kp SQT                      &kp SEMICOLON        &kp L               &kp K      &kp J   &kp H     &kp G   &kp F   &kp D   &kp S  &kp A  &kp TAB
-&mt LS(BACKSLASH) BACKSLASH  &kp SLASH            &kp PERIOD          &kp COMMA  &kp M   &kp N     &kp B   &kp V   &kp C   &kp X  &kp Z  &mo 4
-                                                                      &trans     &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        second_mirror {
-            bindings = <
-&kp DELETE  &trans  &trans          &trans        &trans          &trans       &mt LS(MINUS) MINUS        &mt LS(EQUAL) EQUAL  &trans               &trans               &trans               &trans
-&trans      &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT    &mt LS(N1) NUMBER_1        &mt LS(N2) NUMBER_2  &mt LS(N3) NUMBER_3  &mt LS(N4) NUMBER_4  &mt LS(N5) NUMBER_5  &trans
-&trans      &trans  &trans          &trans        &trans          &trans       &mt LS(NUMBER_6) NUMBER_6  &mt LS(N7) NUMBER_7  &mt LS(N8) NUMBER_8  &mt LS(N9) NUMBER_9  &mt LS(N0) NUMBER_0  &trans
-                                    &trans        &trans          &trans       &trans                     &trans               &trans
             >;
         };
 
         f1-12 {
             bindings = <
-&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6
-&trans  &trans  &trans  &trans   &trans   &trans     &trans  &trans  &trans  &trans   &trans   &trans
-                        &trans   &trans   &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp F11  &kp F12    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4   &kp F5     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans   &trans     &trans  &trans  &trans
             >;
         };
 
         cs {
             bindings = <
-&kp NUMBER_3    &kp NUMBER_2  &kp NUMBER_1  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none  &none
-&kp LEFT_SHIFT  &none         &kp A         &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
-&kp LCTRL       &none         &none         &none  &none  &kp B        &none  &none  &none  &none  &none  &none
-                                            &mo 7  &mo 6  &kp SPACE    &none  &none  &none
+&trans          &kp NUMBER_3      &kp NUMBER_1  &kp W  &kp E  &kp R        &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT  &kp LEFT_SHIFT    &kp A         &kp S  &kp D  &kp F        &none  &none  &none  &none  &none  &none
+&trans          &kp LEFT_CONTROL  &none         &none  &none  &kp B        &none  &none  &none  &none  &none  &none
+                                                &mo 5  &mo 4  &kp SPACE    &none  &none  &none
             >;
         };
 
         cs2 {
             bindings = <
-&kp GRAVE  &trans  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &trans  &trans  &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &trans  &trans    &trans  &trans  &trans
+&trans   &kp GRAVE  &trans  &trans  &trans  &kp T     &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB  &trans     &trans  &trans  &trans  &kp G     &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &trans     &trans  &trans  &kp F1  &kp F2    &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         cs3 {
             bindings = <
-&sv_cheats  &kill   &sv_autobunnyhopping_1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans      &trans  &sv_autobunnyhopping_0  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans      &kill   &sv_autobunnyhopping_1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&sv_cheats  &trans  &sv_autobunnyhopping_0  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans      &trans  &trans                  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                             &trans  &trans  &trans    &trans  &trans  &trans
             >;
