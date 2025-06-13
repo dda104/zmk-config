@@ -94,16 +94,16 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-&trans  &kp Q           &kp W           &mt SQT E           &kp R             &trans         &trans       &kp U             &kp I               &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &trans
-&trans  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &trans         &trans       &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &trans
-&trans  &kp Z           &kp X           &kp C               &kp V             &trans         &trans       &kp M             &kp COMMA           &kp DOT             &kp SLASH               &trans
-                                        &mt TAB B           &lt 1 G           &mt SPACE T    &mt ENTER Y  &lt 1 H           &mt BACKSPACE N
+&trans  &kp Q           &kp W           &mt SQT E           &kp R             &kp T          &trans  &kp U             &kp I               &mt LEFT_BRACKET O  &mt RIGHT_BRACKET P     &trans
+&trans  &mt LEFT_WIN A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &trans         &trans  &mt LEFT_SHIFT J  &mt LEFT_CONTROL K  &mt LEFT_ALT L      &mt LEFT_WIN SEMICOLON  &trans
+&trans  &kp Z           &kp X           &kp C               &kp V             &trans         &trans  &kp M             &kp COMMA           &kp DOT             &kp SLASH               &trans
+                                        &mt TAB B           &kp G             &lt 1 SPACE    &kp Y   &kp H             &kp N
             >;
         };
 
         second {
             bindings = <
-&trans  &kp GRAVE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans    &trans  &kp F2          &kp F8     &trans        &trans         &trans
+&trans  &kp GRAVE     &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans    &trans  &kp F2          &kp F8     &trans        &kp BACKSPACE  &trans
 &trans  &trans        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans    &trans  &kp LEFT_ARROW  &kp DOWN   &kp UP_ARROW  &kp RIGHT      &trans
 &trans  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans    &trans  &kp MINUS       &kp EQUAL  &trans        &kp BACKSLASH  &trans
                                     &trans        &trans        &trans    &trans  &trans          &trans
